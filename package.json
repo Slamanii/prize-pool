@@ -1,47 +1,31 @@
 {
-  "name": "legacy-next-tailwind-basic",
-  "version": "0.1.0",
-  "private": true,
+  "name": "token-lottery",
+  "version": "1.0.0",
+  "description": "## Getting Started",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "type": "module",
   "scripts": {
-    "anchor": "cd anchor && anchor",
-    "anchor-build": "cd anchor && anchor build",
-    "anchor-localnet": "cd anchor && anchor localnet",
-    "anchor-test": "cd anchor && anchor test",
-    "dev": "next dev",
-    "build": "next build",
-    "ci": "npm run build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
+    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
   },
   "dependencies": {
-    "@coral-xyz/anchor": "0.30.1",
-    "@solana/spl-token": "0.4.12",
-    "@solana/wallet-adapter-base": "0.9.24",
-    "@solana/wallet-adapter-react": "0.15.36",
-    "@solana/wallet-adapter-react-ui": "0.9.36",
-    "@solana/web3.js": "1.98.0",
-    "@tabler/icons-react": "^3.30.0",
-    "@tanstack/react-query": "^5.66.9",
-    "@tanstack/react-query-next-experimental": "^5.66.9",
-    "daisyui": "^4.12.24",
-    "jotai": "^2.12.1",
-    "next": "14.2.24",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-hot-toast": "^2.5.2"
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/spl-token": "^0.4.8",
+    "@switchboard-xyz/on-demand": "^1.2.67",
+    "anchor-bankrun": "^0.4.0",
+    "solana-bankrun": "^0.3.0"
   },
   "devDependencies": {
-    "@types/bn.js": "^5.1.6",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.24",
-    "jest": "^29.7.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "ts-jest": "^29.2.6",
-    "typescript": "5.4.5"
+    "@types/bn.js": "^5.1.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3",
+    "prettier": "^2.6.2",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.8.3"
   }
 }
